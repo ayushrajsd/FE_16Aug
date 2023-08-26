@@ -1,1 +1,1 @@
-Notes can be found here - Link
+Notes uploaded in lecture
