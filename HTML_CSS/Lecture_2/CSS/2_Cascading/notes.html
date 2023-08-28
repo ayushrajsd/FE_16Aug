@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAscading and Specificity</title>
+  </head>
+  <body>
+    <h2>Cascading</h2>
+    <p>Inline > external / internal (depends on order )> default styles</p>
+    <h2>CSS Specificity</h2>
+    <p>
+      CSS specificity is a set of rules that determine which CSS styles should
+      be applied to an HTML element when there are multiple conflicting styles
+      targeting the same element. - the more specific style gets applied
+    </p>
+    <p>
+      Rule A: Applies a red text color to all paragraphs. Rule B: Applies a blue
+      text color to paragraphs with a class of "highlight." Rule C: Applies an
+      italic font to paragraphs with an ID of "special-paragraph."
+    </p>
+    <h3>calculating specificity</h3>
+    <p>specificity is set of triplets ( a, b, c )</p>
+    <p>a- IDs</p>
+    <p>b - classes</p>
+    <p>c - elements</p>
+    <p>#apple>p => 101</p>
+    <p>.fruits.banana>span=>021</p>
+    101 > 011 > 005
+  </body>
+</html>

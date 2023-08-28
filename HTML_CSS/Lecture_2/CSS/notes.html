@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 2 Notes</title>
+  </head>
+  <style>
+    *{
+      font-family: sans-serif;
+      line-height: 2rem;;
+    }
+  </style>
+  <body>
+    <h1>Combinators</h1>
+    <p>
+      In CSS, combinators are used to select HTML elements based on their
+      relationship to other elements. Combinators allow you to create more
+      specific and targeted CSS selectors by specifying the relationship between
+      different elements in the HTML structure. There are four types of
+      combinators in CSS:
+    </p>
+    <h2>Descendant Combinator</h2>
+    <p>Descendant Combinator (space): Selects an element that is a descendant of another specified element. It matches any element that is inside the specified element, no matter how deeply nested.
+        Example:
+        div p {
+          /* Selects <p> elements that are descendants of <div> elements */
+        }
+        </p>
+    <h2>Child(Immediate) combinators</h2>
+    <p>Child Combinator (>): Selects an element that is a direct child of another specified element. It matches only if the second element is an immediate child of the first element.
+        Example:
+        
+        ul > li {
+          /* Selects li elements that are direct children of ul elements */
+        }
+        </p>
+    <h2>Adjacent Sibling Combinators</h2>
+    <p>Adjacent Sibling Combinator (+): Selects an element that is the immediate next sibling of another specified element. It matches only if the second elemen`	t comes immediately after the first element.
+        Example:
+        h2 + p {
+          /* Selects p elements that come immediately after h2 elements */
+        }
+        </p>
+    <h2>General Sibling (~)</h2>
+    <p>General Sibling Combinator (~): Selects elements that are siblings of another specified element and come after it. It matches any element that is a sibling of the first element, as long as it appears after the first element.</p>
+    <p>h3 ~ p {
+        /* Selects p elements that are siblings of h3 elements and appear after them */
+      }
+      </p>
+    
+
+  </body>
+</html>
