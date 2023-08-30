@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    html{
+      /* font-size: 10px; */
+    }
+    .px{
+      font-size:32px;
+    }
+    .rem{
+      font-size: 4rem;;
+    }
+
+    .vh-vw{
+      height:70vh;
+      background-color: chocolate;
+      width:70vw;
+      height:50vh;
+      font-size:4vh;
+    }
+    .gp{
+      width:800px;
+      height: 400px;
+      background-color: cornsilk;
+    }
+    .parent{
+      width:50%;
+      background-color: cyan;
+      height:50%;
+    }
+    .child{
+      width:50%;
+      height:50%;
+      background-color: darkgoldenrod;
+    }
+    .pa{
+      font-size: 20px;
+    }
+    .em {
+      font-size: 2em; 
+      padding: 2em;
+      width:2em; 
+      background-color: darkgoldenrod;
+    }
+
+    
+  </style>
+  <body>
+    <!-- * Units - absolute ( px) , relative ( %, em, rem, vh, vw) -->
+    <!-- <div class="px">Pixel unit</div> -->
+    <!-- * 1rem = font size of root element -->
+    <!-- <div class="rem">REM Unit</div> -->
+    
+    <!-- * vh - viewport height vw - viewport width -->
+    <!-- <div class="vh-vw">VH - VW unit</div> -->
+
+    <!-- * percentages are generally recommended to use when
+    * there is a parent with fixed dimensions and 
+    * you want to scale up or down in terms of your parent -->
+    <div class="gp" style="margin-top:20px">
+      grandparent
+      <div class="parent">
+        parent
+        <div class="child">percentage</div>
+      </div>
+    </div>
+    <!-- * relative to parent when you are talking abt
+    * font size -->
+    <!-- * if we give value as em to any other property
+    * then it is relative to current element's font-ssize -->
+    <!-- <div class="pa" style="margin-top:20px">
+      <div class="em">I am em
+        <div class="em">another nested div with em</div>
+      </div>
+    </div> -->
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box{
+      border:1px solid black;
+      background-color: aquamarine;
+      width:100px;
+      height:100px;
+      display: inline-block;
+    }
+    .inline{
+      width:200px;
+      height:500px;
+      /* padding:200px; */
+      border:1px solid red;
+      background-color: blueviolet;
+      /* line-height: 200px; */
+    }
+    .inline_block{
+      display: inline-block;
+      background-color: cadetblue;
+      height:100px;
+      width:300px
+    }
+    table {
+      border: 1px solid #ccc;
+    }
+    tr {
+      border: 1px solid black;
+    }
+    th {
+      min-width: 100px;
+    }
+    td {
+      padding: 1rem;
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <!-- block level element  -->
+    <!-- * stacked one below the other 
+    * block the entire line
+    * any new element will start from the next line -->
+    
+    <div class="box">Hello Hi how are you</div>asdasdasd
+    <div class="box">another div</div>asd
+    <!-- <div style="margin-top: 30px; border: 1px solid blue">I am another div</div> -->
+    <!-- inline element -->
+    <div style="margin: 50px; ">
+      <span class="inline">I am inline</span>
+      <span class="inline">I am another inline</span>
+    </div>
+    <!--  inline block -->
+    <div style="margin: 80px">
+      <span class="inline_block">I am inline block</span>
+      <span class="inline_block">I am inline block</span>
+    </div>
+     <h2>comparison table</h2>
+    <table>
+      <tr>
+        <th>Property</th>
+        <th>Block</th>
+        <th>Inline</th>
+        <th>Inline Block</th>
+      </tr>
+      <tr>
+        <td>Height</td>
+        <td>✅</td>
+        <td>❌</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>Width</td>
+        <td>✅</td>
+        <td>❌</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>Vertical Margin</td>
+        <td>✅</td>
+        <td>❌</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>Horizontal Margin</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>Horozontal/Vertical Border</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>Padding</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+      </tr>
+      <tr></tr>
+    </table> 
+  </body>
+</html>
