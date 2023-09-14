@@ -63,18 +63,38 @@ var bar
  console.log(‘baz:’, baz)
   */
 
+  
   /**
-   * function foo() {
-    function bar() {    // overridden during compilation
-      return 5
-    }
-    return bar()
-    function bar() {
-      return 10
-    }
-  }
- console.log(foo());
+   * Q.3
+   * console.log("a",a);
+ var a=10;
+ real();
+function real() { console.log("I am real. Always run me"); }
+ function real() { console.log("No I am real one "); }
+ function real() { console.log("Real slim shady"); }
+
+// console.log("a", a);
    */
+
+   /**
+    * Q.4
+    * var a = 10;
+console.log("#1", a);
+function fn() {
+    var a = 20;
+    console.log("#2", a);
+    a++;
+    console.log("#3", a);
+    if (a) {
+        var a = 30;
+        a++;
+        console.log("#4", a); 
+    }
+    console.log("#5", a); 
+}
+fn();
+console.log("#6", a); 
+    */
 
 
 
